@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 <!--    <link rel="icon" type="image/ico" href="img/favicon2.ico"/>-->
 
-    <title>Login</title>
+    <title>Login - ID90Travel</title>
 </head>
 <body class="bg-image">
 <div class="container">
