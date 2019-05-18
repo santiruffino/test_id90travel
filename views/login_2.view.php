@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/ico" href="img/favicon2.ico"/>
+<!--    <link rel="icon" type="image/ico" href="img/favicon2.ico"/>-->
 
     <title>Login</title>
 </head>
@@ -22,12 +22,12 @@
               method="post">
             <div class="form-group">
                 <div class="input-group">
-                <select class="form-control" id="sel1">
+                <select class="form-control" id="sel1" name="airline">
 
                 <?php
                 foreach ($response as &$valor) {
                     $list_hotels = $valor["display_name"];
-                    echo "<option>".$list_hotels."</option>";
+                    echo "<option name='.$list_hotels.'>".$list_hotels."</option>";
                 }
                 ?>
                 </select>
