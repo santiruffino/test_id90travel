@@ -13,11 +13,6 @@
 <body class="bg-image">
   <div class="container">
       <div class="login-container">
-          <?
-          if (isset($_POST["login"]) && !empty($_POST["username"]) && !empty($_POST["password"])) {
-              echo "<h1>Login Correcto</h1>";
-          }
-          ?>
       </div>
       <div class="container">
           <form class="form-signin" role="form"
@@ -27,8 +22,6 @@
                   <?php
                   echo "<select name =\"section\" id =\"section\"> 
       <option selected=\"selected\">Escoge un hotel</option>";
-
-
                   foreach ($response as &$valor) {
                       $list_hotels = $valor["display_name"];
                       echo "<option value=" . $list_hotels . ">" . $list_hotels . "</option>";
@@ -39,7 +32,7 @@
               <input type="text" class="form-control"
                      name="username"></br>
               <input type="password" required>
-              <button type="submit" name="login">Login</button>
+              <button type="submit" name="login" class="btn btn-flat-green">Login</button>
           </form>
       </div>
   </div>
