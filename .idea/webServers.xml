@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="aebdc0fe-7ad6-42ff-ae0d-6a681df38bc5" name="Santi" url="http://localhost/login_crm">
+        <fileTransfer port="0" mountedRoot="$PROJECT_DIR$/../../php" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

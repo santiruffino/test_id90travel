@@ -12,25 +12,36 @@
 </head>
 <body class="bg-image">
   <div class="container">
-    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
-      <div class="input-group">
-        <i class="fa fa-user-o icons" aria-hidden="false"></i>
-        <input type="text" name="usuario" placeholder="Usuario" class="form-control">
+      <div class="login-container">
+          <?
+          if (isset($_POST["login"]) && !empty($_POST["username"]) && !empty($_POST["password"])) {
+              echo "<h1>Login Correcto</h1>";
+          }
+          ?>
       </div>
+      <div class="container">
+          <form class="form-signin" role="form"
+                action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"
+                method="post">
+              <div>
+                  <?php
+                  echo "<select name =\"section\" id =\"section\"> 
+      <option selected=\"selected\">Escoge un hotel</option>";
 
-          <div class="input-group">
-            <i class="fa fa-lock icons" aria-hidden="false"></i>
-            <input type="password" name="password" placeholder="Contraseña" class="form-control">
-          </div>
-          <ul>
-            <?php if(!empty($errores)): ?>
-              <?php echo $errores ?>
-            <?php endif; ?>
-          </ul>
 
-          <button type="submit" name="submit" class="btn btn-flat-green">Ingresar</button>
-    </form>
-    <!--<a href="<?php echo 'registro.php' ?>" class="login-link">No tienes cuenta?</a>-->
+                  foreach ($response as &$valor) {
+                      $list_hotels = $valor["display_name"];
+                      echo "<option value=" . $list_hotels . ">" . $list_hotels . "</option>";
+                  }
+                  echo "</select>";
+                  ?>
+              </div>
+              <input type="text" class="form-control"
+                     name="username"></br>
+              <input type="password" required>
+              <button type="submit" name="login">Login</button>
+          </form>
+      </div>
   </div>
 </body>
 </html>

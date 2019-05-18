@@ -10,7 +10,7 @@ body {
 }
 
 .bg-image {
-  background-image: url('../img/fondo_principal.png');
+  background-image: url('../img/fondo_login.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,7 +20,7 @@ body {
 }
 
 .bg-image-view {
-  background-image: url('../img/fondo-view.png');
+  background-image: url('../img/fondo_login.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
