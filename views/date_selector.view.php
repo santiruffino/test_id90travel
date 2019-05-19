@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-AR" data-website-id=1 data-oe-company-name="MADKETING">
+<html lang="es-AR" data-website-id=1>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/ico" href="img/favicon2.ico"/>
     <title>ID90Travel</title>
 
 </head>
