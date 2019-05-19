@@ -13,8 +13,6 @@
 </head>
 <body class="bg-image">
 <div class="container">
-    <div class="login-container">
-    </div>
     <div class="container">
         <form class="form-signin" role="form"
               action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"
