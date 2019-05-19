@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
 <!--    <link rel="icon" type="image/ico" href="img/favicon2.ico"/>-->
 
     <title>Login - ID90Travel</title>
