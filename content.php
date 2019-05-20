@@ -1,6 +1,8 @@
 <?php
 session_start();
 $ch = curl_init();
+$errores = '';
+
 
 if(!isset($_SESSION['username'])) {
     die("No estas logueado!");
@@ -41,7 +43,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     curl_close ($ch);
 
-//    echo $hotels_response_status;
+    if ($hotels_response_status == 200) {
+        header("Location: show_hotels.php");
+    } else {
+        $errores .= '<div class="alert alert-warning" role="alert">Datos ingresados de forma incorrecta. Revise que la fecha de Check-in sea posterior al dia de hoy.</div>';
+    }
 }
 
 $first_name = $_SESSION["server_response"]["member"]["first_name"];

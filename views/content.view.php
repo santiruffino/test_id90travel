@@ -34,6 +34,9 @@
                 <label for="check-out">Fecha de Salida: </label>
                 <input type="date" id="check-out" name="check-out" class="form-control">
             </div>
+            <?php if(!empty($errores)): ?>
+                <?php echo $errores ?>
+            <?php endif; ?>
             <button type="submit" name="login" class="btn btn-flat-green">Consultar</button>
         </form>
     </div>
