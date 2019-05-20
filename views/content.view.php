@@ -14,6 +14,7 @@
 <body class="bg-image">
 <div id="wrapwrap" class="container">
     <div class="container">
+        <h1><?php echo "Bienvenido ".$first_name ?></h1>
         <form class="form-signin" role="form"
               action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"
               method="post">

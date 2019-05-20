@@ -4,6 +4,8 @@ session_start();
 $content = file_get_contents("https://beta.id90travel.com/airlines");
 $response = json_decode($content, true);
 $ch = curl_init();
+$errores = '';
+
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -31,6 +33,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($status == 200) {
         header("Location: content.php");
+    } else {
+        $errores .= '<div class="alert alert-warning" role="alert">Usuario y/o contraseña incorrectos</div>';
     }
 
 }

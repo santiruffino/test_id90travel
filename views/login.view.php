@@ -35,7 +35,10 @@
                 <div class="input-group">
                     <input type="password" name="password" placeholder="Contraseña" class="form-control">
                 </div>
-                <button type="submit" name="login" class="btn btn-flat-green">Login</button>
+                <?php if(!empty($errores)): ?>
+                    <?php echo $errores ?>
+                <?php endif; ?>
+                <button type="submit" name="login" class="btn btn-flat-green">Ingresar</button>
         </form>
     </div>
 </div>

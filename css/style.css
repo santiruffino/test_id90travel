@@ -10,22 +10,22 @@ body {
 }
 
 .bg-image {
+  background-image: linear-gradient(#3A96ED, #834D96);
   background-image: url('../img/fondo_login.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: rgb(246, 79, 1);
   height: 100vh;
 }
 
 .bg-image-view {
+  background-image: linear-gradient(#3A96ED, #834D96);
   background-image: url('../img/fondo_login.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: rgb(246, 79, 1);
   height: 100vh;
 }
 
@@ -94,7 +94,7 @@ form {
 .btn-flat-green {
   border: 2px;
   height: 35px;
-  background-color: #b0b0b0;
+  background-color: #6d6b6b;
   color: #fff;
   font-family: sans-serif;
   margin-bottom: 10px;

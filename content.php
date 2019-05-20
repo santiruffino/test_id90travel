@@ -2,8 +2,7 @@
 session_start();
 $ch = curl_init();
 
-
-if(!isset($_SESSION['usuario'])) {
+if(!isset($_SESSION['username'])) {
     die("No estas logueado!");
 }
 
