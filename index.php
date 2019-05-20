@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     curl_setopt($ch, CURLOPT_URL,"https://beta.id90travel.com/session");
     curl_setopt($ch, CURLOPT_POST, TRUE);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, "/home/software/Descargas/0 (1).ico[airline]"."=".$airline."&session[username]=".$username."&session[password]=".$password."&session[remember_me]=1");
+    curl_setopt($ch, CURLOPT_POSTFIELDS, "session[airline]"."=".$airline."&session[username]=".$username."&session[password]=".$password."&session[remember_me]=1");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 
     $remote_server_output = curl_exec ($ch);
