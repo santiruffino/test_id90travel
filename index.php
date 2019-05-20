@@ -8,21 +8,24 @@ $ch = curl_init();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $airline = $_POST["airline"];
-    $usuario = $_POST['usuario'];
+    $username = $_POST['username'];
     $password = $_POST['password'];
 
     $_SESSION['airline'] = $airline;
-    $_SESSION['usuario'] = $usuario;
+    $_SESSION['username'] = $username;
     $_SESSION['password'] = $password;
 
     curl_setopt($ch, CURLOPT_URL,"https://beta.id90travel.com/session");
     curl_setopt($ch, CURLOPT_POST, TRUE);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, "session[airline]"."=".$airline."&session[username]=".$usuario."&session[password]=".$password."&session[remember_me]=1");
+    curl_setopt($ch, CURLOPT_POSTFIELDS, "/home/software/Descargas/0 (1).ico[airline]"."=".$airline."&session[username]=".$username."&session[password]=".$password."&session[remember_me]=1");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-    $remote_server_output = curl_exec ($ch);
 
+    $remote_server_output = curl_exec ($ch);
     $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    $_SESSION["server_response"] = $remote_server_output["member"]["first_name"];
+    $result = json_decode($remote_server_output,true);
+
+
+    $_SESSION["server_response"] = $result;
 
     curl_close ($ch);
 

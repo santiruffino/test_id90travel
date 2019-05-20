@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-<!--    <link rel="icon" type="image/ico" href="img/favicon2.ico"/>-->
+    <link rel="icon" type="image/ico" href="img/favicon.ico"/>
 
     <title>Login - ID90Travel</title>
 </head>
@@ -30,7 +30,7 @@
                 </select>
                 </div>
                 <div class="input-group">
-                    <input type="text" name="usuario" placeholder="Usuario" class="form-control"></br>
+                    <input type="text" name="username" placeholder="Usuario" class="form-control"></br>
                 </div>
                 <div class="input-group">
                     <input type="password" name="password" placeholder="Contraseña" class="form-control">

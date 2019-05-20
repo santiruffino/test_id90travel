@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/ico" href="img/favicon.ico"/>
 
-    <title>Login - ID90Travel</title>
+    <title>ID90Travel</title>
 </head>
 <body class="bg-image">
 <div id="wrapwrap" class="container">
@@ -17,8 +18,12 @@
               action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"
               method="post">
             <div class="input-group">
-                <label for="destino">Destino: </label>
-                <input type="text" id="destino" name="destino" placeholder="Ej: Cancun" class="form-control"></br>
+                <label for="guests">Cantidad de huéspedes: </label>
+                <input type="number" id="guests" name="guests" placeholder="" class="form-control"></br>
+            </div>
+            <div class="input-group">
+                <label for="destination">Destino: </label>
+                <input type="text" id="destination" name="destination" placeholder="Ej: Cancun" class="form-control"></br>
             </div>
             <div class="input-group">
                 <label for="check-in">Fecha de Ingreso: </label>
