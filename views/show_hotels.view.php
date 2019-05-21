@@ -25,6 +25,9 @@
                 $description = $valor["description"];
                 $retail_sale = $valor["retail_rate"];
 
+                if (empty($_SESSION["hotels_response"])) {
+                    echo "<h1>No hay hoteles disponibles en las fechas ingresadas! Intente con otro rango de fechas.</h1>";
+                } else {
                 echo "<div class=\"card\" style=\"width:100%\">
                     <div class=\"card-body\">
                         <h4 class=\"card-title\">$hotel_name</h4>
@@ -32,6 +35,7 @@
                              <p class=\"card-text\">Precio minorista: $retail_sale</p>  
                     </div>
                   </div>";
+                }
             } ?>
         </div>
     </div>
