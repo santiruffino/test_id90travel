@@ -28,10 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => "GET",
         CURLOPT_POSTFIELDS => "",
-        CURLOPT_HTTPHEADER => array(
-            "Postman-Token: 1dc75080-cab5-4dad-b0e5-71c6aca0c3f3",
-            "cache-control: no-cache"
-        ),
     ));
 
     $hotels_response = curl_exec ($ch);
